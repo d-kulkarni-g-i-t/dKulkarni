@@ -44,9 +44,11 @@
 </head>
 
 <body>
+    
+
     <div class="container">
         <h1>Update Student Information</h1>
-        <form action="/admin/update_student_info" method="POST">
+        <form action="/admin/update_student_info?username={{ username }}" method="POST">
             <div class="mb-3">
                 <label for="usn" class="form-label">USN:</label>
                 <input type="text" class="form-control" id="usn" name="usn" required>
@@ -61,27 +63,23 @@
             </div>
             <div class="mb-3">
                 <label for="attendance" class="form-label">Attendance:</label>
-                <input type="text" class="form-control" id="attendance" name="attendance" required>
+                <input type="number" class="form-control" id="attendance" name="attendance" required>
             </div>
             <div class="mb-3">
-                <label for="marks_subject1" class="form-label">Marks in Subject 1:</label>
-                <input type="text" class="form-control" id="marks_subject1" name="marks_subject1" required>
+                <label for="marks_subject1" class="form-label">Marks Subject 1:</label>
+                <input type="number" class="form-control" id="marks_subject1" name="marks_subject1" required>
             </div>
             <div class="mb-3">
-                <label for="marks_subject2" class="form-label">Marks in Subject 2:</label>
-                <input type="text" class="form-control" id="marks_subject2" name="marks_subject2" required>
+                <label for="marks_subject2" class="form-label">Marks Subject 2:</label>
+                <input type="number" class="form-control" id="marks_subject2" name="marks_subject2" required>
             </div>
             <div class="mb-3">
-                <label for="marks_subject3" class="form-label">Marks in Subject 3:</label>
-                <input type="text" class="form-control" id="marks_subject3" name="marks_subject3" required>
+                <label for="marks_subject3" class="form-label">Marks Subject 3:</label>
+                <input type="number" class="form-control" id="marks_subject3" name="marks_subject3" required>
             </div>
             <div class="mb-3">
-                <label for="marks_subject4" class="form-label">Marks in Subject 4:</label>
-                <input type="text" class="form-control" id="marks_subject4" name="marks_subject4" required>
-            </div>
-            <div class="mb-3">
-                <label for="overall" class="form-label">Overall Marks:</label>
-                <input type="text" class="form-control" id="overall" name="overall" required>
+                <label for="marks_subject4" class="form-label">Marks Subject 4:</label>
+                <input type="number" class="form-control" id="marks_subject4" name="marks_subject4" required>
             </div>
             <button type="submit" class="btn btn-primary">Update</button>
         </form>
